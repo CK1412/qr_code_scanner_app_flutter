@@ -35,7 +35,7 @@ You can use the app by installing [apk file][apk-file-for-android] (Apply for An
 - [https://storyset.com/](https://storyset.com/)
 - [https://www.flaticon.com/](https://www.flaticon.com/)
 
-[apk-file-for-android]: https://drive.google.com/file/d/1xHQiu4jHV0p7ZgU-iDoik43O3FL3cc_e/view?usp=sharing
+[apk-file-for-android]: https://drive.google.com/file/d/1bVGIsnSnYdEpSUKYhFD7nZBTqLcYM94l/view?usp=sharing
 [qr_code_scanner]: https://pub.dev/packages/qr_code_scanner
 [url_launcher]: https://pub.dev/packages/url_launcher
 [qr_flutter]: https://pub.dev/packages/qr_flutter
