@@ -6,7 +6,7 @@ This is a QR Scanner app made with **[Flutter](https://flutter.dev/)**
 
 ## 👀 App preview
 
-<img  width="400px" height="867px" src="app_preview.gif" />
+<img  width="300px" height="650px" src="app_preview.gif" />
 
 ## 📙 How to Use the Project
 
