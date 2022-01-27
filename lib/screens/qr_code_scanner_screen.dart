@@ -148,8 +148,15 @@ class _QRCodeScannerScreenState extends State<QRCodeScannerScreen> {
         if (_isBeingProcessed == false) {
           if (await canLaunch(scanData.code!)) {
             await _qrViewController!.pauseCamera();
+            setState(() {
+              if (_flashIsOn) {
+                _flashIsOn = !_flashIsOn;
+                _qrViewController!.toggleFlash();
+              }
+            });
             await launch(scanData.code!);
             _qrViewController!.resumeCamera();
+            _qrString = '';
           } else {
             if (_flush != null) {
               _flush!.dismiss();
