@@ -146,6 +146,9 @@ class _QRCodeScannerScreenState extends State<QRCodeScannerScreen> {
         }
 
         if (_isBeingProcessed == false) {
+          if (_flush != null) {
+            _flush!.dismiss();
+          }
           if (await canLaunch(scanData.code!)) {
             await _qrViewController!.pauseCamera();
             setState(() {
@@ -158,9 +161,6 @@ class _QRCodeScannerScreenState extends State<QRCodeScannerScreen> {
             _qrViewController!.resumeCamera();
             _qrString = '';
           } else {
-            if (_flush != null) {
-              _flush!.dismiss();
-            }
             _flush = buildFlushbar(scanData);
             _flush!.show(context);
           }
