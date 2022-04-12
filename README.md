@@ -10,7 +10,7 @@ This is a QR Scanner app made with **[Flutter](https://flutter.dev/)**
 
 ## 📙 How to Use the Project
 
-You can use the app by installing [apk file][apk-file-for-android] (Apply for Android OS version larger than 4.4)
+You can use the app by installing [on Play Store][download-android] (Apply for Android OS version larger than 4.4)
 
 ## 🥰 The main functions of the application
 
@@ -35,7 +35,7 @@ You can use the app by installing [apk file][apk-file-for-android] (Apply for An
 - [https://storyset.com/](https://storyset.com/)
 - [https://www.flaticon.com/](https://www.flaticon.com/)
 
-[apk-file-for-android]: https://drive.google.com/file/d/1IFdVAgYXjgHpRGT7QfL8EeMIsxqYNeP0/view?usp=sharing
+[download-android]: https://play.google.com/store/apps/details?id=com.github.CK1412.qr_code_scanner_app_flutter
 [qr_code_scanner]: https://pub.dev/packages/qr_code_scanner
 [url_launcher]: https://pub.dev/packages/url_launcher
 [qr_flutter]: https://pub.dev/packages/qr_flutter
