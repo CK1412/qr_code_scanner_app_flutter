@@ -102,7 +102,7 @@ class _QRCodeScannerScreenState extends State<QRCodeScannerScreen> {
       ),
       style: ElevatedButton.styleFrom(
         shape: const CircleBorder(),
-        primary: whiteColor.withOpacity(.3),
+        backgroundColor: whiteColor.withOpacity(.3),
         padding: const EdgeInsets.all(14),
       ),
     );
@@ -116,7 +116,7 @@ class _QRCodeScannerScreenState extends State<QRCodeScannerScreen> {
       child: const Icon(Icons.clear_rounded),
       style: ElevatedButton.styleFrom(
         shape: const CircleBorder(),
-        primary: whiteColor.withOpacity(.3),
+        backgroundColor: whiteColor.withOpacity(.3),
       ),
     );
   }
@@ -129,7 +129,7 @@ class _QRCodeScannerScreenState extends State<QRCodeScannerScreen> {
       child: const Icon(Icons.cameraswitch_rounded),
       style: ElevatedButton.styleFrom(
         shape: const CircleBorder(),
-        primary: whiteColor.withOpacity(.3),
+        backgroundColor: whiteColor.withOpacity(.3),
       ),
     );
   }
@@ -201,7 +201,8 @@ class _QRCodeScannerScreenState extends State<QRCodeScannerScreen> {
           style: titleStyle.copyWith(fontSize: 16),
         ),
         onPressed: () async {
-          await Clipboard.setData(ClipboardData(text: scanData.code));
+          await Clipboard.setData(
+              ClipboardData(text: scanData.code.toString()));
           _flush!.dismiss();
         },
       ),
