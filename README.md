@@ -12,6 +12,12 @@ This is a QR Scanner app made with **[Flutter](https://flutter.dev/)**
 
 You can use the app by installing [on Play Store][download-android] (Apply for Android OS version larger than 4.4)
 
+## Build abb
+
+```bash
+flutter build appbundle --obfuscate --split-debug-info=build
+```
+
 ## 🥰 The main functions of the application
 
 - Scan QR code and Barcode
