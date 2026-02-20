@@ -25,8 +25,8 @@ flutter build appbundle --obfuscate --split-debug-info=build
 
 ## ℹ️ Version and packages used
 
-- Flutter 2.8.1
-- Dart 2.14.3
+- Flutter 3.24.0
+- Dart 3.5
 - scan QR code : [qr_code_scanner: ^0.6.1][qr_code_scanner]
 - open url : [url_launcher: ^6.0.18][url_launcher]
 - generate QR code : [qr_flutter: ^4.0.0][qr_flutter]
