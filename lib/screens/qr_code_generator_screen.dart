@@ -2,10 +2,10 @@ import 'dart:typed_data';
 
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
+import 'package:flutter_image_gallery_saver/flutter_image_gallery_saver.dart';
 import 'package:qr_code_scanner_app_flutter/utils/constants.dart';
 import 'package:qr_flutter/qr_flutter.dart';
 import 'package:permission_handler/permission_handler.dart';
-import 'package:image_gallery_saver/image_gallery_saver.dart';
 import 'package:another_flushbar/flushbar.dart';
 import 'dart:ui' as ui;
 
@@ -46,10 +46,8 @@ class _QRCodeGeneratorScreenState extends State<QRCodeGeneratorScreen> {
       await Permission.storage.request();
     }
 
-    await ImageGallerySaver.saveImage(
+    await ImageGallerySaver().saveImage(
       Uint8List.fromList(pngBytes),
-      name: 'QR code',
-      quality: 100,
     );
 
     Flushbar(
@@ -182,7 +180,7 @@ class _QRCodeGeneratorScreenState extends State<QRCodeGeneratorScreen> {
         alignment: Alignment.center,
         child: AnimatedCrossFade(
           firstChild: const Text('Create your QR code'),
-          secondChild: QrImage(
+          secondChild: QrImageView(
             data: _qrData,
             version: QrVersions.auto,
             errorStateBuilder: (ctx, error) => const Text(
